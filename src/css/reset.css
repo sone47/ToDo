@@ -1,0 +1,25 @@
+body,div,a,h1,h2,h3,h4,h5,h6,p,ul,ol,li,dl,dd,dt,span,input,textarea,select,option,b,strong,img{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-size: 14px;
+	font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "\5B8B\4F53", simsun, sans-serif;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+input[type=button] {
+	border: none;
+	background-color: transparent;
+}
+input[type=submit] {
+	border: none;
+	background-color: transparent;
+}
+button {
+	border: none;
+	background-color: transparent;
+}

@@ -1,0 +1,107 @@
+@import './reset.css';
+@import './statusbar.css';
+
+/* 标题 */
+.title {
+  margin-top: 0.5rem;
+	text-align: center;
+	font-size: 1rem;
+}
+/* todo item */
+.list ul {
+  margin-top: 1rem;
+  border-top: 1px solid #ddd;
+}
+/* 删除按钮 */
+.deleteBtn {
+  float: right;
+  color: #000;
+  opacity: 0.5;
+  text-shadow: 0 1px 0 #fff;
+  font-size: 0.2rem;
+}
+/* 完成进度 */
+.completeProgress {
+  margin: 0.5rem;
+  float: right;
+}
+
+/* 添加任务表单 */
+.addForm {
+  clear: both;
+  width: calc(100%-20px);
+  border: 1px solid #ddd;
+  margin: 10px;
+  overflow: hidden;
+}
+.addForm .addContent {
+  float: left;
+  height: 1rem;
+  width: 80%;
+  text-indent: 0.3rem;
+  border: none;
+  font-size: 0.2rem;
+}
+.addForm .addBtn {
+  width: 20%;
+  height: 1rem;
+  background-color: #4fcee9;
+  color: #fff;
+  float: right;
+  font-size: 0.4rem;
+}
+
+/* 自定义item checkbox */
+input[type=checkbox] {
+	visibility: hidden;
+	position: absolute;
+	left: -999999px;
+}
+
+.taskCheckbox {
+  height: 2rem;
+  padding: 0 0.5rem;
+  border-bottom: 1px solid #ddd;
+	display: flex;
+	align-items: center;
+  justify-content: space-between;
+}
+/* 任务完成时item变化 */
+.complete {
+  background-color: #caecf7;
+}
+
+.complete span {
+  color: #00a1d6;
+}
+
+.taskCheckbox label {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background: #eee;
+	border: 1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.taskCheckbox label:after {
+	opacity: 0.2;
+	content: '';
+	width: 0.3rem;
+	height: 0.15rem;
+	background: transparent;
+	border: 0.15rem solid #00a1d6;
+	border-top: none;
+	border-right: none;
+	transform: rotate(-45deg);
+}
+
+.taskCheckbox input[type=checkbox]:checked+label:after {
+	opacity: 1;
+}
+
+.taskCheckbox span {
+  font-size: 0.3rem;
+}
