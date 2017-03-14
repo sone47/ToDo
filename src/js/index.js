@@ -172,4 +172,4 @@ class TodoForm extends Component {
 	}
 }
 
-export default TodoBox;
+ReactDOM.render(<TodoBox/>, document.getElementById('todo'));

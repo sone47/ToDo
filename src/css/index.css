@@ -1,11 +1,10 @@
 @import './reset.css';
-@import './statusbar.css';
 
 /* 标题 */
 .title {
   margin-top: 0.5rem;
-	text-align: center;
-	font-size: 1rem;
+  text-align: center;
+  font-size: 1rem;
 }
 /* todo item */
 .list ul {

@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "start": "set NODE_ENV=dev && webpack-dev-server",
+    "built": "set NODE_ENV=production && webpack --progress --colors"
   },
   "author": "sone",
   "license": "ISC",
